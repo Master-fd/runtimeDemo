@@ -14,3 +14,7 @@ runtime 机制，每个消息都会转换从obj_msgSend的形式
 3.调用methodSignatureForSelector:方法，尝试获得一个方法签名。如果获取不到，则直接调用doesNotRecognizeSelector抛出异常。   
 4.调用forwardInvocation:方法，将地3步获取到的方法签名包装成Invocation传入，如何处理就在这里面了。   
 上面这4个方法均是模板方法，开发者可以override，由runtime来调用。最常见的实现消息转发，就是重写方法3和4，吞掉一个消息或者代理给其他对象都是没问题的
+
+##我的博客  
+欢迎光临：http://www.cnblogs.com/hepingqingfeng/
+
